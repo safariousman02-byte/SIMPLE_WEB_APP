@@ -3,118 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager - Simple Web App</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <title>LearnLink - Online Education</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1><i class="fas fa-tasks"></i> Task Manager</h1>
-            <p class="subtitle">A simple web application built with HTML, CSS, and JavaScript</p>
-            <div class="git-info">
-                <p><i class="fab fa-github"></i> This project demonstrates Git workflow and VS Code integration</p>
-            </div>
-        </header>
-
-        <main>
-            <div class="app-section">
-                <div class="input-section">
-                    <h2><i class="fas fa-plus-circle"></i> Add New Task</h2>
-                    <div class="input-group">
-                        <input type="text" id="taskInput" placeholder="Enter a new task...">
-                        <button id="addTaskBtn"><i class="fas fa-plus"></i> Add Task</button>
-                    </div>
-                    <div class="priority-selector">
-                        <label for="prioritySelect">Priority:</label>
-                        <select id="prioritySelect">
-                            <option value="low">Low</option>
-                            <option value="medium" selected>Medium</option>
-                            <option value="high">High</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="task-stats">
-                    <div class="stat-box">
-                        <h3><i class="fas fa-clipboard-list"></i> Total Tasks</h3>
-                        <p id="totalTasks">0</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3><i class="fas fa-check-circle"></i> Completed</h3>
-                        <p id="completedTasks">0</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3><i class="fas fa-clock"></i> Pending</h3>
-                        <p id="pendingTasks">0</p>
-                    </div>
-                </div>
-
-                <div class="filter-section">
-                    <h2><i class="fas fa-filter"></i> Filter Tasks</h2>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="all">All Tasks</button>
-                        <button class="filter-btn" data-filter="pending">Pending</button>
-                        <button class="filter-btn" data-filter="completed">Completed</button>
-                    </div>
-                </div>
-
-                <div class="task-list-section">
-                    <h2><i class="fas fa-list-ul"></i> Task List</h2>
-                    <div id="taskList">
-                        <!-- Tasks will be added here dynamically -->
-                        <p class="empty-message">No tasks added yet. Add your first task above!</p>
-                    </div>
-                </div>
-
-                <div class="actions">
-                    <button id="clearCompletedBtn"><i class="fas fa-broom"></i> Clear Completed</button>
-                    <button id="saveTasksBtn"><i class="fas fa-save"></i> Save Tasks</button>
-                    <button id="loadTasksBtn"><i class="fas fa-download"></i> Load Tasks</button>
-                </div>
-            </div>
-
-            <div class="dev-section">
-                <h2><i class="fas fa-code"></i> Development Process</h2>
-                <div class="process-steps">
-                    <div class="step">
-                        <h3><i class="fab fa-html5"></i> HTML Structure</h3>
-                        <p>Built semantic HTML with clear sections and accessible elements.</p>
-                    </div>
-                    <div class="step">
-                        <h3><i class="fab fa-css3-alt"></i> CSS Styling</h3>
-                        <p>Used Flexbox, CSS Grid, and responsive design principles.</p>
-                    </div>
-                    <div class="step">
-                        <h3><i class="fab fa-js"></i> JavaScript Logic</h3>
-                        <p>Implemented DOM manipulation, event handling, and local storage.</p>
-                    </div>
-                    <div class="step">
-                        <h3><i class="fab fa-git-alt"></i> Git & GitHub</h3>
-                        <p>Used Git for version control and GitHub Pages for deployment.</p>
-                    </div>
-                </div>
-                
-                <div class="git-commands">
-                    <h3><i class="fas fa-terminal"></i> Git Commands Used</h3>
-                    <pre><code>git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin [repository-url]
-git push -u origin main</code></pre>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <p>Week 5 Project: Building a Simple Web Application</p>
-            <p>Created with <i class="fas fa-heart"></i> using VS Code • Deployed with GitHub Pages</p>
-            <p class="timestamp" id="timestamp"></p>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
+    <header>
+        <h1>Welcome to LearnLink</h1>
+        <p>Your virtual classroom platform</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pages/courses.html">Courses</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="pages/login.html">Login</a>
+    </nav>
+    
+    <main>
+        <h2>Start Learning Today</h2>
+        <p>Browse courses, join virtual classrooms, track your progress.</p>
+        <a href="pages/courses.html" class="btn">View Courses</a>
+    </main>
+    
+    <script src="js/app.js"></script>
 </body>
 </html>
