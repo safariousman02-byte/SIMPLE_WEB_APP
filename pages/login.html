@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LearnLink</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Login to LearnLink</h1>
+        <p>Access your virtual classroom</p>
+    </header>
+    
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="active">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+    
+    <main>
+        <div class="form-container">
+            <h2>Login to Your Account</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit" class="btn">Login</button>
+            </form>
+            
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+            
+            <div id="login-result" style="margin-top: 20px; display: none;">
+                <h3>Login Successful!</h3>
+                <p>Welcome, <span id="user-name"></span>!</p>
+                <p>Email: <span id="user-email"></span></p>
+                <p>Account Type: <span id="user-type"></span></p>
+                <button id="view-dashboard" class="btn">Go to Dashboard</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../js/auth.js"></script>
+</body>
+</html>
