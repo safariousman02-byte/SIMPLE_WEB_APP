@@ -15,7 +15,27 @@
     </nav>
     <main>
         <h2>Get in Touch</h2>
-        <p>Email: support@learnlink.com</p>
+        
+            <div class="form-container">
+                <h2>Send us a message</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <p id="contact-response" style="display: none; margin-top: 20px;"></p>
+            </div>
+
         <a href="../index.html" class="btn">Back to Home</a>
     </main>
 </body>
