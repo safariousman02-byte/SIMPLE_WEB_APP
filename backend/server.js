@@ -4,7 +4,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors());
@@ -13,10 +13,10 @@ app.use(express.static('../'));
 
 // MySQL Connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '15h16h17h18h19h20j',
-    database: 'learnlink_db'
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || '15h16h17h18h19h20j',
+    database: process.env.DB_NAME || 'learnlink_db'
 });
 
 db.connect((err) => {
