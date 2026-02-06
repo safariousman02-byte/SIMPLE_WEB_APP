@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 async function fetchEnrolledCourses(userId) {
     try {
         // This endpoint doesn't exist yet - you need to create it in server.js
-        const response = await fetch(`http://localhost:3000/api/enrollments/${userId}`);
+        const response = await fetch(`http://localhost:3001/api/enrollments/${userId}`);
         
         if (response.ok) {
             const courses = await response.json();
