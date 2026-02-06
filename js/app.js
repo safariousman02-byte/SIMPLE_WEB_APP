@@ -88,7 +88,7 @@ registerForm.addEventListener('submit', async function(e) {
     
     // Send to backend API
     try {
-        const response = await fetch('http://localhost:3000/api/register', {
+        const response = await fetch('http://localhost:3001/api/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             
             try {
-                const response = await fetch('http://localhost:3000/api/contact', {
+                const response = await fetch('http://localhost:3001/api/contact', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify(formData)
